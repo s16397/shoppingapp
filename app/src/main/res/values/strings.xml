@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ShoppingListApp</string>
+    <string name="hello_world_text">0</string>
+    <string name="toast_button_text">Toast</string>
+    <string name="count_button_text">Count</string>
+    <string name="hint_product_name">Product name</string>
+    <string name="hint_product_price">Product price</string>
+    <string name="hint_product_quantity">Product quantity</string>
+    <string name="add_product_button_text">Add product</string>
+    <string name="update_product_button_text">Update product</string>
+    <string name="product_list_button_text">Product List</string>
+    <string name="checkbox_product_purchased">purchased ?</string>
+</resources>
