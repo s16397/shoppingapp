@@ -36,14 +36,14 @@ public class ProductData implements Parcelable {
                 }
             };
 
-    private final Integer productId;
+    private final String productId;
     private final String productName;
     private final Double productPrice;
     private final int productQuantity;
     private final boolean isProductPurchased;
 
     public ProductData(Parcel in) {
-        this.productId = in.readInt();
+        this.productId = in.readString();
         this.productName = in.readString();
         this.productPrice = in.readDouble();
         this.productQuantity = in.readInt();
@@ -57,7 +57,7 @@ public class ProductData implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeInt(this.productId);
+        parcel.writeString(this.productId);
         parcel.writeString(this.productName);
         parcel.writeDouble(this.productPrice);
         parcel.writeInt(this.productQuantity);

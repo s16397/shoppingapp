@@ -6,7 +6,6 @@ import android.arch.lifecycle.LiveData;
 import com.example.mariusz.shoppinglistapp.entity.Product;
 
 import java.util.List;
-import java.util.Optional;
 
 import io.reactivex.Completable;
 

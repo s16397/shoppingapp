@@ -1,14 +1,13 @@
 package com.example.mariusz.shoppinglistapp.injection;
 
 
-import android.arch.persistence.room.Room;
-import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
 import com.example.mariusz.shoppinglistapp.ShoppingListApplication;
-import com.example.mariusz.shoppinglistapp.db.ProductDatabase;
 import com.example.mariusz.shoppinglistapp.repository.ProductRepository;
 import com.example.mariusz.shoppinglistapp.repository.ProductRepositoryImpl;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import javax.inject.Singleton;
 
@@ -27,16 +26,25 @@ public class ShoppingListModule {
         return shoppingListApplication;
     }
 
-    @Provides
-    @Singleton
-    ProductRepository provideProductRepository(ProductDatabase productDatabase) {
-        return new ProductRepositoryImpl(productDatabase);
-    }
+//    @Provides
+//    @Singleton
+//    ProductRepository provideProductRepository() {
+//        return new ProductRepositoryImpl();
+//    }
+//
+//    @Provides
+//    @Singleton
+//    DatabaseReference provideFirebasDatabase() {
+//
+//        return FirebaseDatabase
+//                .getInstance()
+//                .getReference(ProductRepositoryImpl.ROOT_ELEMENT);
+//    }
 
-    @Provides
-    @Singleton
-    ProductDatabase provideProductDatabase(Context context) {
-        return Room.databaseBuilder(context.getApplicationContext(), ProductDatabase.class,
-                "product_db").build();
-    }
+//    @Provides
+//    @Singleton
+//    ProductDatabase provideProductDatabase(Context context) {
+//        return Room.databaseBuilder(context.getApplicationContext(), ProductDatabase.class,
+//                "product_db").build();
+//    }
 }

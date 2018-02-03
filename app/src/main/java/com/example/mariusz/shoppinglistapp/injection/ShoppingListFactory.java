@@ -6,8 +6,6 @@ import android.support.annotation.NonNull;
 
 import com.example.mariusz.shoppinglistapp.ShoppingListApplication;
 
-import lombok.RequiredArgsConstructor;
-
 public class ShoppingListFactory extends ViewModelProvider.NewInstanceFactory {
 
     private ShoppingListApplication application;
