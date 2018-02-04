@@ -58,7 +58,10 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxandroid:${rx_android_version}"
     implementation "org.projectlombok:lombok:${lombok_version}"
     implementation 'com.google.firebase:firebase-database:11.0.4'
+    implementation 'com.google.android.gms:play-services-maps:11.0.4'
 //    implementation 'com.firebaseui:firebase-ui-auth:3.1.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
     annotationProcessor "org.projectlombok:lombok:${lombok_version}"
     annotationProcessor "com.google.dagger:dagger-compiler:${dagger_version}"
     annotationProcessor "android.arch.lifecycle:compiler:${arch_components_version}"
@@ -67,6 +70,11 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation "com.android.support.test.espresso:espresso-core:$espresso_version"
 }
+
+
+
+
+
 
 
 apply plugin: 'com.google.gms.google-services'

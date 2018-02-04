@@ -1,6 +1,7 @@
 package com.example.mariusz.shoppinglistapp.injection;
 
 import com.example.mariusz.shoppinglistapp.viewmodel.add.AddProductViewModel;
+import com.example.mariusz.shoppinglistapp.viewmodel.mylocation.MyLocationListViewModel;
 import com.example.mariusz.shoppinglistapp.viewmodel.update.UpdateProductViewModel;
 import com.example.mariusz.shoppinglistapp.viewmodel.list.ProductListViewModel;
 
@@ -17,6 +18,8 @@ public interface ShoppingListComponent {
     void inject(AddProductViewModel addProductViewModel);
 
     void inject(UpdateProductViewModel updateProductViewModel);
+
+    void inject(MyLocationListViewModel myLocationListViewModel);
 
     interface Injectable {
         void inject(ShoppingListComponent shoppingListComponent);

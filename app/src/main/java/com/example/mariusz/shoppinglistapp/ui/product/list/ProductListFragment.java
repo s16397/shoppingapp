@@ -66,7 +66,6 @@ public class ProductListFragment extends Fragment {
                 .get(ProductListViewModel.class);
 
         productListViewModel.getProducts().observe(this, products -> {
-            Log.d(TAG, "Products changed: " + products);
             productAdapter.setProducts(products);
         });
 

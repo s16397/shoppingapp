@@ -36,8 +36,7 @@ public class ProductListViewModel extends ViewModel implements ShoppingListCompo
 //    ProductRepository productRepository;
 
     private MutableLiveData<List<Product>> products = new MutableLiveData<>();
-    private DatabaseReference productDatabase = FirebaseDatabase
-            .getInstance()
+    private DatabaseReference productDatabase = FirebaseDatabase.getInstance()
             .getReference(PRODUCT_LIST);
 
     @Override
